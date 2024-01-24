@@ -15,7 +15,7 @@ function App() {
 	return (
 		<>
 			<Routes>
-				<Route path="/nepalchandan/home" element={<Home />} />
+				<Route path="/nepalchandan" element={<Home />} />
 				<Route path="/nursery" element={<Nursery />} />
 				<Route path="/news" element={<News />} />
 				<Route path="/article" element={<Article />} />

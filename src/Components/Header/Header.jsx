@@ -34,7 +34,7 @@ const Header = () => {
 							<ul>
 								<div className={styles.leftListItems}>
 									<li onClick={clickHandler}>
-										<Link to="/">होम</Link>
+										<Link to="/nepalchandan">होम</Link>
 									</li>
 									<li onClick={clickHandler}>
 										<Link to="/nursery">नर्सरी</Link>
