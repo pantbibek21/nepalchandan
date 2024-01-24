@@ -1,0 +1,89 @@
+.container {
+	.card {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		border: 2px solid rgba(0, 0, 0, 0.555);
+		border-radius: 12px;
+
+		padding: 24px;
+		margin-bottom: 40px;
+
+		&:hover {
+			border: 2px solid green;
+			box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.089);
+		}
+
+		.detail {
+			width: 70%;
+
+			.row {
+				margin-bottom: 24px;
+
+				.key {
+					display: block;
+					font-size: 24px;
+					font-weight: bold;
+				}
+
+				.value {
+					display: block;
+					font-size: 20px;
+				}
+
+				.button {
+					padding: 12px 20px;
+					border-radius: 4px;
+					cursor: pointer;
+					background-color: #3a7d0e;
+					color: white;
+
+					&:hover {
+						background-color: yellow;
+						color: black;
+					}
+				}
+			}
+		}
+		.plantDescription {
+			width: 30%;
+			height: 400px;
+
+			.imgWrapper {
+				height: 80%;
+				border: 2px solid rgba(0, 128, 0, 0.699);
+				border-radius: 12px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 12px;
+				}
+			}
+
+			.plantName {
+				font-size: 24px;
+				text-align: center;
+				padding: 4px;
+				margin-top: 24px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 712px) {
+	.container {
+		.card {
+			flex-direction: column-reverse;
+
+			.detail {
+				width: 100%;
+			}
+
+			.plantDescription {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.heroSection {
+	height: 300px;
+	// background-image: url("https://images.deccanherald.com/deccanherald/import/sites/dh/files/articleimages/2022/02/15/file7imxpjtcj4keujqxcu0-1081618-1644899144.jpg");
+	background-image: url("https://scontent.fktm16-1.fna.fbcdn.net/v/t1.6435-9/200227970_10218838975585916_2180401304775619340_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3ba11c&_nc_ohc=J_nWTin2ayAAX-Y_rhe&_nc_oc=AQmPZsBN-IoFCDbaJZx_QDD68Q7oFppfnK1DZVP1qeSkTwLkowi2EGAGolNIpD4uK3L1BkJiwfXVTpqOSO9v6528&_nc_ht=scontent.fktm16-1.fna&oh=00_AfBMgeqJVHApnXYzB8T0jO67zQ2BcVQPmY9sZYWK62AqUg&oe=65D40BDB");
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	z-index: -2;
+
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		inset: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -21;
+	}
+
+	.content {
+		width: 80%;
+		padding-top: 6%;
+		margin: 0 auto;
+
+		z-index: 232;
+
+		h2 {
+			font-size: 36px;
+			color: rgba(255, 255, 255, 0.908);
+		}
+
+		p {
+			font-size: 24px;
+			color: rgba(255, 255, 255, 0.596);
+		}
+	}
+}

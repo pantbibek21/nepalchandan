@@ -1,0 +1,45 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	position: relative;
+}
+
+.componentSection {
+	height: auto;
+	padding: 120px 0px 60px;
+
+	.container {
+		max-width: 1140px;
+		height: 100%;
+		margin: 0 auto;
+
+		.sectionHeading {
+			font-size: 44px;
+			text-align: center;
+		}
+
+		.sectionSubHeading {
+			font-size: 20px;
+			color: rgba(0, 0, 0, 0.644);
+			margin-bottom: 60px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 956px) {
+	.componentSection {
+		.container {
+			max-width: 95%;
+		}
+	}
+}
